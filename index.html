@@ -119,7 +119,7 @@
                             <dd>London, England</dd>
                         </dl>
                         <q>"I traveled here for business, but my stay was extended. Now it is my home."</q>
-                    </div>
+                        </div>
                 </section>
                 <section>
                     <!--Responsive Image for resolution switching
@@ -256,7 +256,7 @@
             <form action="https://wp.zybooks.com/form-viewer.php" method="post">
                 <div>
                     <label for="firstname">First Name<span>*</span></label>
-                    <input type="text" id="firstname" name="firstname" autocomplete="given-name">
+                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
                 </div>
                 <div>
                     <label for="lastname">Last Name<span>*</span></label>
@@ -264,7 +264,7 @@
                 </div>
                 <div>
                     <label for="email">Email<span>*</span></label>
-                    <input type="email" id="email" name="email" autocomplete="email">
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
                 <div>
                     <label for="phone">Phone<span>*</span></label>
@@ -287,8 +287,8 @@
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
-                        <option value="">Choose</option>
+                    <select id="select-destination" required>
+                        <option value="" disabled>Choose</option>
                         <option value="Barcelona">Barcelona</option>
                         <option value="Granada">Granada</option>
                         <option value="Ibiza">Ibiza</option>
@@ -302,8 +302,8 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
-                        <option value="">Choose</option>
+                    <select id="select-travel-time" required>
+                        <option value="" disabled>Choose</option>
                         <option value="Fall">Fall</option>
                         <option value="Winter">Winter</option>
                         <option value="Spring">Spring</option>
